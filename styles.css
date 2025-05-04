@@ -1,1 +1,76 @@
 /*  your css code here. If applicable */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 5px;
+  background-color: white;
+  height: 100vh;
+}
+
+.item {
+  background-color: green;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 10px;
+}
+
+/* Grid positions */
+.item1 {
+  grid-column: 1 / 4;
+}
+
+.item2 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 6;
+}
+
+.item3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.item4 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.item5 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.item6 {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.item7 {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.item8 {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+
+.item9 {
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+}
+
+.item10 {
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+}
